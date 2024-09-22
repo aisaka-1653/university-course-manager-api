@@ -95,6 +95,8 @@ GEM
       devise (> 3.5.2, < 5)
       rails (>= 4.2.0, < 7.2)
     erubi (1.13.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -228,6 +230,7 @@ DEPENDENCIES
   debug
   devise
   devise_token_auth
+  faker
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
