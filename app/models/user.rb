@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :timeoutable
   include DeviseTokenAuth::Concerns::User
 
+  has_one :teacher, dependent: :destroy
+
   def full_name
     "#{first_name} #{last_name}"
   end
